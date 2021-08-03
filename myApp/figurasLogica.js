@@ -55,8 +55,9 @@ let calcularAreaTriangulo = () => {
 console.groupEnd();
 
 console.group('Circulo');
-
+//CIRCULO
 const pi = Math.PI;
+const InputCirculo = document.getElementById("InputCirculo");
 
 function diametroCirculo(radio) {
     return radio * 2;
@@ -70,13 +71,27 @@ function perimetroCirculo(radio) {
 function areaCirculo(radio) {
     return (radio * radio) * pi;
 }
-// console.log(`Radio del circulo: ${radioCirculo} cm`);
 
-// console.log(`El diametro del circulo: ${diametroCirculo} cm`);
+let calcularDiametroCirculo = () => {
+    const radio = parseInt(InputCirculo.value);
 
-// console.log(`El perimetro del Circulo es : ${perimetroCirculo}cm`);
+    let diametro = diametroCirculo(radio);
+    alert(`El diametro de su circulo es de ${diametro} cm.`)
+}
 
-// console.log(`El area del circulo es: ${areaCirculo} cm2`);
+let calcularPerimetroCirculo = () => {
+    const radio = parseInt(InputCirculo.value);
+
+    let perimetro = perimetroCirculo(radio);
+    alert(`El perimetro de su circulo es de ${perimetro} cm.`)
+}
+
+let calcularAreaCirculo = () => {
+    const radio = parseInt(InputCirculo.value);
+
+    let area = areaCirculo(radio);
+    alert(`El area de su circulo es de ${area} cm2.`)
+}
 
 console.groupEnd();
 

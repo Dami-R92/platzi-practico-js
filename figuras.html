@@ -27,12 +27,22 @@
         <h2>Calculo Area y perimetro de Cuadrado</h2>
         <form action="">
             <label for="InputTriangulo">Escribe cuanto mide cada lado (Cm) de tu Triangulo Equilatero</label>
-            <input id="InputTrianguloA" type="number" placeholder="Lado A">
-            <input id="InputTrianguloB" type="number" placeholder="Lado B">
-            <input id="InputTrianguloC" type="number" placeholder="Base de Triangulo">
-            <input id="InputTrianguloH" type="number" placeholder="Altura de Triangulo">
+            <input id="InputTrianguloA" type="number" >
+            <input id="InputTrianguloB" type="number" >
+            <input id="InputTrianguloC" type="number" >
+            <input id="InputTrianguloH" type="number">
             <button onclick="calcularPerimetroTriangulo()" type="button">Calcular Perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+        </form>
+    </section>
+    <section id="circulo" >
+        <h2>Calculo Area y perimetro y diametro de un Circulo</h2>
+        <form action="">
+            <label for="InputCirculo">Escribe cuanto mide cada lado (Cm) de tu Cuadrado</label>
+            <input id="InputCirculo" type="number">
+            <button type="button" onclick="calcularDiametroCirculo()">Calcular Diametro</button>
+            <button onclick="calcularPerimetroCirculo()" type="button">Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
         </form>
     </section>
 
