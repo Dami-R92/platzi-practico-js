@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: linear-gradient(rgb(54, 124, 253), rgb(104, 157, 255), rgb(60, 163, 247), rgb(60, 188, 247));
+    background-attachment: fixed;
+}
+
+input {
+    color: red;
+    border: none;
+    border-style: none;
+    text-decoration-line: none;
+    background-color: rgba(140, 0, 255, 0.801);
+    backdrop-filter: blur(2px);
+
+}
+
+input:hover {
+    border: none;
+}
+
+.btn {
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 3px
+}
+
+
+.btn:hover {
+    background-color: rgb(41, 96, 197);
+    transform: scale(1.015);
+    box-shadow: rgb(46, 46, 46) 1px 2px 2px;
+}

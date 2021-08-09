@@ -25,7 +25,7 @@ console.groupEnd();
 
 console.group('Triangulo')
 
-//CONDIGO DE TRIANGULO
+//CODIGO DE TRIANGULO
 const inputA = document.getElementById("InputTrianguloA");
 const inputB = document.getElementById("InputTrianguloB");
 const inputC = document.getElementById("InputTrianguloC");
@@ -74,27 +74,37 @@ function areaCirculo(radio) {
 
 let calcularDiametroCirculo = () => {
     const radio = parseInt(InputCirculo.value);
-
     let diametro = diametroCirculo(radio);
     alert(`El diametro de su circulo es de ${diametro} cm.`)
 }
 
 let calcularPerimetroCirculo = () => {
     const radio = parseInt(InputCirculo.value);
-
     let perimetro = perimetroCirculo(radio);
     alert(`El perimetro de su circulo es de ${perimetro} cm.`)
 }
 
 let calcularAreaCirculo = () => {
     const radio = parseInt(InputCirculo.value);
-
     let area = areaCirculo(radio);
     alert(`El area de su circulo es de ${area} cm2.`)
 }
 
 console.groupEnd();
 
+// Triangulo Isoceles: Posee dos lados iguales y uno diferente.
+
+const InputTrianguloIsoA = document.getElementById("InputTrianguloIsoA");
+const InputTrianguloIsoB = document.getElementById("InputTrianguloIsoB");
 
 
-// Triangulo Isoceles: Posee dos lados iguales y uno diferente. 
+function AlturaTrianguloIso(lados,base) {
+    return Math.sqrt((lados*lados)-((base*base)/4)).toFixed(2)
+}
+
+let calcularAlturaTrianguloIso = () => {
+    const lados = parseInt(InputTrianguloIsoA.value);
+    const base = parseInt(InputTrianguloIsoB.value);
+    let altura = AlturaTrianguloIso(lados, base);
+    alert(`La altura de su circulo es de ${altura} cm.`)
+}

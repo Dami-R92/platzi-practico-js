@@ -24,9 +24,9 @@
         </form>
     </section>
     <section id="triangulo">
-        <h2>Calculo Area y perimetro de Cuadrado</h2>
+        <h2>Calculo Area y perimetro de Triangulo</h2>
         <form action="">
-            <label for="InputTriangulo">Escribe cuanto mide cada lado (Cm) de tu Triangulo Equilatero</label>
+            <label for="InputTriangulo">Escribe cuanto mide cada lado (Cm) de tu Triangulo</label>
             <input id="InputTrianguloA" type="number" >
             <input id="InputTrianguloB" type="number" >
             <input id="InputTrianguloC" type="number" >
@@ -45,7 +45,17 @@
             <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
         </form>
     </section>
-
+    <section id="trianguloIso" >
+        <h2>Calculo Altura, Perimetro y Area de un Triangulo Isoceles</h2>
+        <form action="">
+            <label for="InputTriangulo">Escribe cuanto mide cada lado (Cm) de tu Triangulo Isoceles</label>
+            <input id="InputTrianguloIsoA" type="number" placeholder="lados">
+            <input id="InputTrianguloIsoB" type="number" placeholder="base">
+            <button onclick="calcularAlturaTrianguloIso()" type="button">Calcular Altura</button>
+            <button type="button" onclick="calcularPerimetroTrianguloIso()">Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaTrianguloIso()">Calcular Area</button>
+        </form>
+    </section>
 
 </body>
 
