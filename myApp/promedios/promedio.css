@@ -1,0 +1,37 @@
+
+body{
+    background-image: url(../../images/fondo.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(24, 24, 24, 0.76) ;
+
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(24, 24, 24, 0.76) ;
+}
+.promedio--container {
+    height: 400px;
+    width: 85%;
+    background-color: rgba(240, 255, 240, 0.26);
+    backdrop-filter: blur(2px);
+    border: rgba(240, 255, 240, 0.548) solid 0.5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.76) ;
+
+}
