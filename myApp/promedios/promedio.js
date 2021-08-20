@@ -1,12 +1,30 @@
 const lista1 = [
     100,
+    400,
     200,
     300,
     500,
+    120,
     15000,
 ];
 //Mediana
-const mitadLista1 = parseInt(lista1.length / 2);
+
+
+let listaOrdenada = lista1.sort( 
+    
+function comparar (a, b) {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    if (a===b) {
+        return 0;
+    }
+})
+
+const mitadLista1 = parseInt(listaOrdenada.length / 2);
 
 function esPar(numerito) {
     if (numerito % 2 === 0) {
@@ -15,21 +33,32 @@ function esPar(numerito) {
         return false;
     }
 }
-
+let mediaAritmetica = (lista) => {
+    const sumaLista = lista.reduce(
+        function (valorAcumulado = 0, nuevoElemento) {
+            return valorAcumulado + nuevoElemento;
+        }
+    );
+    let promedio = sumaLista / lista.length;
+    return promedio
+};
 
 let mediana;
 
-if (esPar(lista1.length)) {
-    const elemento1 = lista1[mitadLista1];
-    const elemento2 = lista1[mitadLista1 + 1];
-    console.log('perrito')
+if (esPar(listaOrdenada.length)) {
+    const elemento1 = listaOrdenada[mitadLista1 - 1];
+    const elemento2 = listaOrdenada[mitadLista1];
+
+    const promedioElemento1y2 = mediaAritmetica([
+        elemento1,
+        elemento2,
+    ]);
 
 } else {
-    mediana = lista1[mitadLista1]
+    mediana = listaOrdenada[mitadLista1]
 }
 
-
-
+console.log(listaOrdenada);
 
 
 //Promedio
@@ -41,19 +70,19 @@ if (esPar(lista1.length)) {
 
 // let promedio = (sumaLista1 / lista1.length);
 
-let mediaAritmetica = (lista) => {
-    // let sumaLista = 0;
-    // for (let i = 0; i < lista.length; ++i) {
-    //     sumaLista = sumaLista + lista[i];
-    // }
-    const sumaLista = lista.reduce(
-        function (valorAcumulado = 0, nuevoElemento) {
-            return valorAcumulado + nuevoElemento;
-        }
-    );
-    let promedio = sumaLista / lista.length;
-    return promedio
-}
+// let mediaAritmetica = (lista) => {
+//     // let sumaLista = 0;
+//     // for (let i = 0; i < lista.length; ++i) {
+//     //     sumaLista = sumaLista + lista[i];
+//     // }
+//     const sumaLista = lista.reduce(
+//         function (valorAcumulado = 0, nuevoElemento) {
+//             return valorAcumulado + nuevoElemento;
+//         }
+//     );
+//     let promedio = sumaLista / lista.length;
+//     return promedio
+// }
 
 // const localidades = [
 //     'panama', 
