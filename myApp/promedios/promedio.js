@@ -6,10 +6,27 @@ const lista1 = [
     15000,
 ];
 //Mediana
-const mitadLista1 = lista1.length /2
+const mitadLista1 = parseInt(lista1.length / 2);
+
+function esPar(numerito) {
+    if (numerito % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
+let mediana;
 
+if (esPar(lista1.length)) {
+    const elemento1 = lista1[mitadLista1];
+    const elemento2 = lista1[mitadLista1 + 1];
+    console.log('perrito')
+
+} else {
+    mediana = lista1[mitadLista1]
+}
 
 
 
