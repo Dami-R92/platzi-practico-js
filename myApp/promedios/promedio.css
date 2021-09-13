@@ -35,3 +35,20 @@ h2 {
     box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.76) ;
 
 }
+
+button {
+    color: white;
+    font-size: 18px;
+    font-family: 'Glory', sans-serif;
+    font-weight: 400;
+    text-shadow: rgba(56, 56, 56, 0.534) 2px 2px 2px;
+    padding: 5px 10px;
+    background: linear-gradient( rgb(252, 3, 86), rgb(202, 2, 69));
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(92, 91, 91, 0.548) 3px 3px 3px;
+}
+
+button:hover {
+    background: rgb(5, 172, 144);
+}
