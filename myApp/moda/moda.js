@@ -1,6 +1,5 @@
 let lista1 = [];
 
-
 let moda = () => {
 
     let lista1Count = {};
