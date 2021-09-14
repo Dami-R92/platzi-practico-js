@@ -10,19 +10,18 @@ const lista1 = [
 //Mediana
 
 
-let listaOrdenada = lista1.sort( 
-    
-function comparar (a, b) {
-    if (a < b) {
-        return -1;
-    }
-    if (a > b) {
-        return 1;
-    }
-    if (a===b) {
-        return 0;
-    }
-})
+let listaOrdenada = lista1.sort(
+    function comparar(a, b) {
+        if (a < b) {
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        }
+        if (a === b) {
+            return 0;
+        }
+    })
 
 const mitadLista1 = parseInt(listaOrdenada.length / 2);
 
@@ -32,7 +31,8 @@ function esPar(numerito) {
     } else {
         return false;
     }
-}
+};
+
 let mediaAritmetica = (lista) => {
     const sumaLista = lista.reduce(
         function (valorAcumulado = 0, nuevoElemento) {
