@@ -1,3 +1,36 @@
-h1, h2{
+h1, h2, label, input{
     font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-image: url();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    color: white;
+    font-size: 18px;
+    font-family: 'Glory', sans-serif;
+    font-weight: 400;
+    text-shadow: rgba(56, 56, 56, 0.534) 2px 2px 2px;
+    padding: 5px 10px;
+    background: linear-gradient( rgb(252, 3, 86), rgb(202, 2, 69));
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(61, 61, 61, 0.548) 2px 1px 3px;
+}
+
+button:hover {
+    background: rgb(5, 172, 144);
+}
+.formContainer {
+    display: flex; 
+    justify-content: space-around;
+    height: 200px;
+    width: 60%;
+    color: white;
+    background-color: rgba(255, 20, 145, 0.452);
+    backdrop-filter: blur (5px) ;
+    border-radius: 5px;
 }
