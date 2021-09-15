@@ -1,0 +1,58 @@
+const argentina = [];
+
+argentina.push({
+    name:"Damian",
+    salary:300
+});
+argentina.push({
+    name:"Florencia",
+    salary:450
+});
+argentina.push({
+    name:"Mauricio",
+    salary:400
+});
+argentina.push({
+    name:"Sebas",
+    salary:1500
+});
+argentina.push({
+    name:"Romina",
+    salary:350
+});
+argentina.push({
+    name:"Ramiro",
+    salary:1000
+});
+argentina.push({
+    name:"Bruno",
+    salary:500
+});
+argentina.push({
+    name:"Lauti",
+    salary:500
+});
+argentina.push({
+    name:"Santi",
+    salary:500
+});
+argentina.push({
+    name:"Vicky",
+    salary:800
+});
+argentina.push({
+    name:"Nacho",
+    salary:750
+});
+argentina.push({
+    name:"Noe",
+    salary:550
+});
+argentina.push({
+    name:"Jime",
+    salary:550
+});
+argentina.push({
+    name:"Coqui",
+    salary:600
+});
