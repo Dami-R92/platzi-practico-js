@@ -51,16 +51,20 @@ console.log(medianaSalarios(salariosArg));
 
 const medianaGralSalariosARg = medianaSalarios(salariosArg);
 
-//Mediana en Top10%.
+
 //Ejemplo.
-const arrayEj = [0,1,2,3,4,5,6,7,8,9,10,11]
-const ej = arrayEj.splice(5);
-console.log(ej);
+// const arrayEj = [0,1,2,3,4,5,6,7,8,9,10,11]
+// const ej = arrayEj.splice(5,2); // el primer numero marca desde donde cortar y el segundo cuanto cortar luego del inicio.
+// console.log(ej);
+
+//Mediana en Top10%.
+
+const SpliceStart = (salariosArgSorted.length * 0.90);
+const spliceCount = (salariosArgSorted.length - SpliceStart);
 
 
-const SpliceStart = 0;
-const spliceCount = 0;
+const salariosArgTop10 = salariosArgSorted.splice(SpliceStart, SpliceStart);
 
+const medianaTop10Arg = medianaSalarios(salariosArgTop10);
 
-
-const salariosArgTop10 = salariosArgSorted.splice();
+console.log(medianaTop10Arg)
