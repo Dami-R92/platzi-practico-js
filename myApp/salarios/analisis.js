@@ -11,6 +11,7 @@ const salariosArgSorted = salariosArg.sort(
     }
 );
 
+//Helpers
 function esPar(numero) {
     return(numero % 2 === 0)
     //Puede obviarse el If else true false ya que son valores intrinsecos al resultyado del return el ya devuelev true y flse. 
@@ -25,6 +26,7 @@ let mediaAritmetica = (lista) => {
     return promedio
 };
 
+//Mediana General.
 let medianaSalarios = (lista) => {
     const mitad = parseInt(lista.length / 2);
 
@@ -32,25 +34,33 @@ let medianaSalarios = (lista) => {
         const personaMitad1 = lista[mitad - 1];
         const personaMitad2 = lista[mitad];
 
-        const promedioPersonaMitad1y2 = mediaAritmetica([
+        const mediana = mediaAritmetica([
             personaMitad1,
             personaMitad2,
         ]);
-        return promedioPersonaMitad1y2
+        return mediana
 
     } else {
         const personaMitad = lista[mitad];
         return personaMitad;
     }
-}
+};
 
+//Ejecucion. 
 console.log(medianaSalarios(salariosArg));
-// let papa = [];
-// papa.push("Criolla");
-// papa.push("Sabanera");
-// let decada;
 
-// let impresiónCompuesta = (arreglo) => {
-//     decada = arreglo.forEach((u) => console.log(u))
-// }
-// impresiónCompuesta(papa);
+const medianaGralSalariosARg = medianaSalarios(salariosArg);
+
+//Mediana en Top10%.
+//Ejemplo.
+const arrayEj = [0,1,2,3,4,5,6,7,8,9,10,11]
+const ej = arrayEj.splice(5);
+console.log(ej);
+
+
+const SpliceStart = 0;
+const spliceCount = 0;
+
+
+
+const salariosArgTop10 = salariosArgSorted.splice();
