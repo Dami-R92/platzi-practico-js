@@ -13,7 +13,7 @@ const salariosArgSorted = salariosArg.sort(
 
 //Helpers
 function esPar(numero) {
-    return(numero % 2 === 0)
+    return (numero % 2 === 0)
     //Puede obviarse el If else true false ya que son valores intrinsecos al resultyado del return el ya devuelev true y flse. 
 };
 let mediaAritmetica = (lista) => {
@@ -67,4 +67,25 @@ const salariosArgTop10 = salariosArgSorted.splice(SpliceStart, SpliceStart);
 
 const medianaTop10Arg = medianaSalarios(salariosArgTop10);
 
-console.log(medianaTop10Arg)
+console.log(medianaTop10Arg);
+
+
+const canastaBasica = 325;
+
+let nPobres = (datos) => {
+    let pobres = 0
+    datos.map((i) => {
+        if (i.salary < canastaBasica) {
+            pobres++;
+            console.log(`${i.name} tiene potencial`)
+        }
+    })
+    if (pobres === 0) {
+        console.log('Terrible pais no hay pobreza');
+    } else {
+        console.log(`Hay ${pobres} pobre/s`);
+    }
+
+};
+
+nPobres(argentina);

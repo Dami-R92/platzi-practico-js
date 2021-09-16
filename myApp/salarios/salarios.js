@@ -2,7 +2,7 @@ const argentina = [];
 
 argentina.push({
     name:"Damian",
-    salary:300
+    salary:500
 });
 argentina.push({
     name:"Florencia",
@@ -14,7 +14,7 @@ argentina.push({
 });
 argentina.push({
     name:"Sebas",
-    salary:1500
+    salary:800
 });
 argentina.push({
     name:"Romina",
