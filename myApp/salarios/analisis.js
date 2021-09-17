@@ -89,3 +89,30 @@ let nPobres = (datos) => {
 };
 
 nPobres(argentina);
+
+//CODIGO DEL FORMULARIO.
+console.group('Formulario')
+const inputName = document.getElementById("inputName");
+const inputSalary = document.getElementById("inputSalary");
+
+//Esta funcion envia los datos ingresados en el formulario al Array.
+let enviarDatos = () => {
+    console.log(inputSalary.value);
+    argentina.push({
+        name: inputName.value,
+        salary:inputSalary.value
+    });
+};
+
+// let calcularPerimetroCuadrado = () => {
+//     const value = input.value;
+//     let perimetro = perimetroCuadrado(value);
+//     alert(`El perimetro de su cuadrado es de ${perimetro} cm.`)
+// }
+
+// let calcularAreaCuadrado = () => {
+//     const value = input.value;
+//     let area = areaCuadrado(value);
+//     alert(`El Area de su cuadrado es de ${area} cm2.`)
+// }
+console.groupEnd();
