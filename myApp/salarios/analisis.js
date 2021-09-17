@@ -96,13 +96,31 @@ const inputName = document.getElementById("inputName");
 const inputSalary = document.getElementById("inputSalary");
 
 //Esta funcion envia los datos ingresados en el formulario al Array.
-let enviarDatos = () => {
-    console.log(inputSalary.value);
+let enviarDatos = (event) => {
+    event.preventDefault();
     argentina.push({
         name: inputName.value,
-        salary:inputSalary.value
+        salary: inputSalary.value
     });
+
+    argentina.map((persona) => {
+        // console.log(persona.name);
+        dataContainer.innerHTML += `
+        <div class="cardPersona">
+            <h1>${persona.name}</h1>
+            <h2>${persona.salary}</h2>
+            <button>X</button>
+        </div>
+    `
+    })
 };
+
+const dataContainer = document.getElementById("dataContainer");
+
+
+// cardPersona.innerHTML = ``
+
+
 
 // let calcularPerimetroCuadrado = () => {
 //     const value = input.value;

@@ -35,3 +35,16 @@ button:hover {
     backdrop-filter: blur(5px) ;
     border-radius: 5px;
 }
+.dataContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.cardPersona {
+    text-align: center;
+    background-color: dimgray;
+    width: 200px;
+    margin: 10px;
+}
